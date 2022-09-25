@@ -144,6 +144,7 @@
                             FontSize="15"
                             Content="Odyssey"
                             FontFamily="Script"
+                            Click="Button_Click"
                           ></Button>
                 </Border>
 

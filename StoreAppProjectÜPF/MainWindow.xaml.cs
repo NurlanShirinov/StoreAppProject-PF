@@ -111,7 +111,9 @@ namespace StoreAppProjectÜPF
         public ObservableCollection<Product> Products { get; set; }
         public ObservableCollection<ProductUC> ProductsUC { get; set; }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
 
-
+        }
     }
 }
