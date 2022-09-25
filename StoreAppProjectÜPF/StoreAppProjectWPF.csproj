@@ -71,14 +71,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="ProductUC.xaml">
+    <Page Include="UserControl\ProductUC.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\Product.cs" />
-    <Compile Include="ProductUC.xaml.cs">
+    <Compile Include="UserControl\ProductUC.xaml.cs">
       <DependentUpon>ProductUC.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -123,6 +123,27 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\cycle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\handle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\SSD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\T-Shirt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\iphone11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\CarParts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\HPLaptop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\microphone.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

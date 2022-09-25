@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StoreAppProjectÜPF.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,12 @@ namespace StoreAppProjectÜPF
     /// </summary>
     public partial class ProductUC : UserControl
     {
-        public ProductUC()
+        public Product Product { get; set; }
+        public ProductUC(Product product)
         {
             InitializeComponent();
+            this.DataContext = this;
+            this.Product = product;
         }
     }
 }
