@@ -14,7 +14,7 @@ namespace StoreAppProjectÜPF.Models
        
 
         public event PropertyChangedEventHandler PropertyChanged;
-
+         
         protected void OnPropertyChanged([CallerMemberName] string name = null)
         {
             PropertyChangedEventHandler handler = PropertyChanged;
@@ -46,6 +46,22 @@ namespace StoreAppProjectÜPF.Models
         {
             get { return price; }
             set { price = value; OnPropertyChanged(); }
+        }
+
+        private string star;
+
+        public string Star
+        {
+            get { return star; }
+            set { star = value; }
+        }
+
+        private string plus;
+
+        public string Plus
+        {
+            get { return plus; }
+            set { plus = value; }
         }
 
 

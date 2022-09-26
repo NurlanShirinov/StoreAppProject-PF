@@ -245,8 +245,8 @@
 
             </StackPanel>
 
-            <WrapPanel Grid.Row="1" Grid.Column="1" Name="wrappanel">
-                
+            <WrapPanel Grid.Row="1" Grid.Column="1" Name="wrappanel" Orientation="Horizontal">
+           
             </WrapPanel>
 
 

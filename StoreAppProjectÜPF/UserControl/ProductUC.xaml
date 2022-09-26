@@ -17,11 +17,11 @@
                      Canvas.Top="269">
                 
                 <Ellipse.Fill>
-                    <ImageBrush ImageSource="Images/plus.png"></ImageBrush>
+                    <ImageBrush ImageSource="{Binding Product.Plus, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></ImageBrush>
                 </Ellipse.Fill>
             </Ellipse>
 
-            <Image Source="Images/star.png" Width="20" Height="20" Canvas.Right="2"></Image>
+            <Image Source="{Binding Product.Star, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="20" Height="20" Canvas.Right="2"></Image>
             <Image Source="{Binding Product.Path, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="150" Height="150" Canvas.Bottom="90" Canvas.Left="23"> </Image>
             <TextBlock Width="150" Height="25" Canvas.Bottom="80" Canvas.Left="10" FontFamily="Script" Text="{Binding Product.Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" FontSize="15" FontWeight="Bold"></TextBlock>
             <TextBlock Width="50" Height="20" Canvas.Bottom="60" Canvas.Left="10" Text="{Binding Product.Price, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" FontSize="15" FontFamily="Script"></TextBlock>
