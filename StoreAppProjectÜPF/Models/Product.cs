@@ -53,7 +53,7 @@ namespace StoreAppProjectÜPF.Models
         public string Star
         {
             get { return star; }
-            set { star = value; }
+            set { star = value; OnPropertyChanged(); }
         }
 
         private string plus;
@@ -61,7 +61,7 @@ namespace StoreAppProjectÜPF.Models
         public string Plus
         {
             get { return plus; }
-            set { plus = value; }
+            set { plus = value; OnPropertyChanged(); }
         }
 
 

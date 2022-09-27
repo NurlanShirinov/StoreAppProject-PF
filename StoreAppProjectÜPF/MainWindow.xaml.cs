@@ -47,56 +47,72 @@ namespace StoreAppProjectÜPF
                 {
                     Name="Dual Suspension",
                      Price=2022,
-                     Path="Images/cycle.png"
+                     Path="/Images/cycle.png",
+                      Plus="/Images/plus.png",
+                       Star="/Images/star.png",
                 },
 
                 new Product
                 {
                     Name="Tennis Handle",
                      Price=100,
-                     Path="Images/handle.png"
+                     Path="/Images/handle.png",
+                      Plus="/Images/plus.png",
+                       Star="/Images/star.png",
                 },
 
                 new Product
                 {
                     Name="Samsung SSD",
                      Price=350,
-                     Path="Images/SSD.png"
+                     Path="/Images/SSD.png",
+                      Plus="/Images/plus.png",
+                       Star="/Images/star.png",
                 },
 
                 new Product
                 {
                     Name="Messi T-Shirt",
                      Price=200,
-                     Path="Images/T-Shirt.png"
+                     Path="/Images/T-Shirt.png",
+                      Plus="/Images/plus.png",
+                       Star="/Images/star.png",
                 },
 
                  new Product
                 {
                     Name="Iphone- 11 ",
                      Price=899,
-                     Path="Images/Iphone11.png"
+                     Path="/Images/Iphone11.png",
+                      Plus="/Images/plus.png",
+                       Star="/Images/star.png",
                 },
 
                 new Product
                 {
                     Name="Car-Parts",
                      Price=4700,
-                     Path="Images/CarParts.png"
+                     Path="/Images/CarParts.png",
+                      Plus="/Images/plus.png",
+                       Star="/Images/star.png",
                 },
 
                   new Product
                 {
                     Name="HP-LapTop",
                      Price=5499,
-                     Path="Images/HPLaptop.png"
+                     Path="/Images/HPLaptop.png",
+                      Plus="/Images/plus.png",
+                       Star="/Images/star.png",
                 },
 
                       new Product
                 {
                     Name="microphone",
                      Price=349,
-                     Path="Images/microphone.png"
+                     Path="/Images/microphone.png",
+                      Plus="/Images/plus.png",
+                       Star="/Images/star.png",
                 },
             };
 
@@ -111,9 +127,6 @@ namespace StoreAppProjectÜPF
         public ObservableCollection<Product> Products { get; set; }
         public ObservableCollection<ProductUC> ProductsUC { get; set; }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
 
-        }
     }
 }

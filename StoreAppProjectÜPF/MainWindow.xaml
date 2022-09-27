@@ -27,9 +27,9 @@
                        Content="Shop"
                        FontWeight="Bold"
                        FontSize="15">
-                    
+
                 </Label>
-                
+
                 <StackPanel Grid.Row="0" Grid.Column="0">
                     <Border Width="100"
                         Height="40" 
@@ -48,7 +48,7 @@
                           ></Button>
                     </Border>
                 </StackPanel>
-                
+
             </Canvas>
 
             <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal">
@@ -112,8 +112,17 @@
                             Height="35"
                             FontSize="15"
                             Content="Cult"
-                            FontFamily="Script"
-                          ></Button>
+                            FontFamily="Script" RenderTransformOrigin="0.5,0.5"
+                          >
+                        <Button.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="-0.03"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Button.RenderTransform>
+                    </Button>
                 </Border>
 
 
@@ -144,7 +153,6 @@
                             FontSize="15"
                             Content="Odyssey"
                             FontFamily="Script"
-                            Click="Button_Click"
                           ></Button>
                 </Border>
 
@@ -182,7 +190,7 @@
                        FontFamily="Microsoft Sans Serif"
                        FontWeight="Bold"
                        FontSize="20"></Label>
-                
+
                 <Label Content="All"
                        Margin="20,7"
                        FontFamily="Microsoft Sans Serif"
@@ -194,7 +202,7 @@
                        FontFamily="Microsoft Sans Serif"
                        FontWeight="Normal"
                        FontSize="16"></Label>
-                
+
                 <Label Content="Frames"
                        Margin="20,7"
                        FontFamily="Microsoft Sans Serif"
@@ -245,9 +253,11 @@
 
             </StackPanel>
 
-            <WrapPanel Grid.Row="1" Grid.Column="1" Name="wrappanel" Orientation="Horizontal">
-           
-            </WrapPanel>
+            <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" Grid.Row="1" Grid.Column="1">
+                <WrapPanel  Name="wrappanel" Orientation="Horizontal">
+
+                </WrapPanel>
+            </ScrollViewer>
 
 
         </Grid>
